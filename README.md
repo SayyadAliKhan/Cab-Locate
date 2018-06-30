@@ -2,9 +2,9 @@
 Service to get the nearest cab information
 
 # Service access (UI is unavailable use postman)
-Add - localhost:Port/api/cars - use below schema info
+#Add - localhost:Port/api/cars - use below schema info
 
-// create geolocation Schema
+# create geolocation Schema
 const GeoSchema = new Schema({
     type: {
         type: String,
@@ -16,7 +16,7 @@ const GeoSchema = new Schema({
     }
 });
 
-// create ninja Schema & model
+# create ninja Schema & model
 const CarSchema = new Schema({
     uniqueNo: {
         type: String,
@@ -37,6 +37,6 @@ const CarSchema = new Schema({
     geometry: GeoSchema
 });
 
-Update: localhost:Port/api/cars/:id - (id - ObjectID of mongoDB)
-Delete: localhost:Port/api/cars/:id
-GET: localhost:Port/api/cars
+#Update: localhost:Port/api/cars/:id - (id - ObjectID of mongoDB)
+#Delete: localhost:Port/api/cars/:id
+#GET: localhost:Port/api/cars
